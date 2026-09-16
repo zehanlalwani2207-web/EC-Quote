@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Quotation - Failo Digital & English Cosmos</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --bg-light: #f8fafc;
+            --border: #e2e8f0;
+            --text-main: #334155;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .quotation-container {
+            max-width: 800px;
+            background: #ffffff;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .company-titles h1 {
+            font-size: 24px;
+            color: var(--primary);
+            margin: 0 0 5px 0;
+        }
+
+        .company-titles h2 {
+            font-size: 16px;
+            color: var(--accent);
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .intro-text {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .service-section {
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .service-header {
+            background: var(--bg-light);
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .service-body {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .service-body {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-desc {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 15px;
+        }
+
+        .service-pricing {
+            text-align: right;
+        }
+
+        @media (max-width: 600px) {
+            .service-pricing {
+                text-align: left;
+            }
+        }
+
+        .price-tag {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .details-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .details-list li {
+            font-size: 13px;
+            color: var(--text-muted);
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .details-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .note {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        .terms-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .terms-section strong {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quotation-container">
+        <header>
+            <div class="company-titles">
+                <h1>Service Quotation: Failo Digital</h1>
+                <h2>Client: English Cosmos</h2>
+            </div>
+        </header>
+
+        <p class="intro-text">
+            This document outlines the professional digital marketing, development, and content production services offered by Failo Digital for English Cosmos.
+        </p>
+
+        <!-- 1. Video Editing Services -->
+        <div class="service-section">
+            <div class="service-header">1. Video Editing Services</div>
+            <div class="service-body">
+                <div>
+                    <div class="service-desc">Professional Video Editing</div>
+                </div>
+                <div class="service-pricing">
+                    <div class="price-tag">₹500 per video edit</div>
+                    <div class="note">Note: This price is ₹500 less than our last quotation[cite: 1].</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Google SEO & Business Profile Management -->
+        <div class="service-section">
+            <div class="service-header">2. Google SEO & Business Profile Management</div>
+            <div class="service-body">
+                <div>
+                    <div class="service-desc">Google SEO & GBP Management</div>
+                    <ul class="details-list">
+                        <li>1 Google Post or Reel daily[cite: 1].</li>
+                        <li>Reel length strictly restricted to 10 seconds[cite: 1].</li>
+                        <li>Publishing raw videos 2 to 3 times per week[cite: 1].</li>
+                        <li>Active monitoring and replying to all customer reviews[cite: 1].</li>
+                        <li>Regular updating of business descriptions and keywords[cite: 1].</li>
+                    </ul>
+                </div>
+                <div class="service-pricing">
+                    <div class="price-tag">₹3,000 monthly</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Basic SEO Website Development -->
+        <div class="service-section">
+            <div class="service-header">3. Basic SEO Website Development</div>
+            <div class="service-body">
+                <div>
+                    <div class="service-desc">Basic SEO-Optimized Website</div>
+                    <ul class="details-list">
+                        <li>Creation of a responsive, basic SEO-friendly website tailored for English Cosmos[cite: 1].</li>
+                        <li>Domain registration/renewal charges are extra as per actuals[cite: 1].</li>
+                    </ul>
+                </div>
+                <div class="service-pricing">
+                    <div class="price-tag">₹3,000 + Domain Cost</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Ad Video Production & Meta Ads Management -->
+        <div class="service-section">
+            <div class="service-header">4. Ad Video Production & Meta Ads Management</div>
+            <div class="service-body">
+                <div>
+                    <div class="service-desc">Ad Shoot & Meta Ads Management</div>
+                    <ul class="details-list">
+                        <li>Ad videos will be professionally shot and edited by our team[cite: 1].</li>
+                        <li>Includes complete Meta Ads campaign setup, optimization, and management[cite: 1].</li>
+                    </ul>
+                </div>
+                <div class="service-pricing">
+                    <div class="price-tag">₹1,000 per video (Shoot + Edit) + Meta Ad Cost</div>
+                    <div class="note">Note: Meta advertising ad-spend budget is extra and to be paid directly to platforms[cite: 1].</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms & Next Steps -->
+        <div class="terms-section">
+            <strong>Terms & Next Steps:</strong> Please review the pricing and inclusions above. Upon confirmation, Failo Digital will initiate the onboarding and execution roadmap for English Cosmos[cite: 1].
+        </div>
+    </div>
+
+</body>
+</html>
